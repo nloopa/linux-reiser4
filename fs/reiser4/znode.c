@@ -661,7 +661,7 @@ unsigned znode_free_space(znode * node /* znode to query */ )
 	return node_plugin_by_node(node)->free_space(node);
 }
 
-/* left delimiting key of znode */
+/* right delimiting key of znode */
 reiser4_key *znode_get_rd_key(znode * node /* znode to query */ )
 {
 	assert("nikita-958", node != NULL);
@@ -671,7 +671,7 @@ reiser4_key *znode_get_rd_key(znode * node /* znode to query */ )
 	return &node->rd_key;
 }
 
-/* right delimiting key of znode */
+/* left delimiting key of znode */
 reiser4_key *znode_get_ld_key(znode * node /* znode to query */ )
 {
 	assert("nikita-974", node != NULL);
