@@ -24,7 +24,7 @@
  *
  * Particular type of item can be further split into units. Unit is piece of
  * item that can be cut from item and moved into another item of the same
- * time. Units are used by balancing code to repack data during balancing.
+ * type. Units are used by balancing code to repack data during balancing.
  *
  * Unit can be further split into smaller entities (for example, extent unit
  * represents several pages, and it is natural for extent code to operate on
